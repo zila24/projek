@@ -195,7 +195,6 @@ By Kelompok 5. 2025
 </div>
 
 </div>
-
 <?php } ?>
 
 </body>
