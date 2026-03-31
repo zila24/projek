@@ -10,58 +10,48 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:Arial;
 }
-
 body{
-    background:#e6e6e6;
+    background:#f3f4f7;
 }
-
 .header{
     text-align:center;
     padding-top:30px;
     position:relative;
 }
-
 .header h1{
     font-size:40px;
     font-weight:600;
     color:#333;
 }
-
 .header p{
     font-size:18px;
     margin-top:8px;
     color:#555;
 }
-
 .logo-kiri{
     position:absolute;
     left:40px;
     top:10px;
     text-align:center;
 }
-
 .logo-kiri h3{
     font-size:22px;
     margin-bottom:5px;
 }
-
 .logo-kiri img{
     width:130px;
 }
-
 .logo-kanan{
     position:absolute;
     right:40px;
     top:20px;
 }
-
 .logo-kanan img{
     width:90px;
 }
-
-.login-box{
+.login-box, .error-box{
     width:380px;
     background:white;
     margin:60px auto;
@@ -70,28 +60,23 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
     text-align:center;
 }
-
-.login-box img{
+.login-box img,
+.error-icon img{
     width:90px;
     margin-bottom:10px;
 }
-
 .login-box h2{
     font-weight:600;
     margin-bottom:5px;
 }
-
 .login-box p{
     font-size:14px;
     color:#666;
     margin-bottom:25px;
 }
-
 .input-box{
-    width:100%;
     margin:15px 0;
 }
-
 .input-box input{
     width:100%;
     padding:13px;
@@ -101,7 +86,6 @@ body{
     font-size:15px;
     outline:none;
 }
-
 button{
     width:100%;
     padding:13px;
@@ -113,35 +97,17 @@ button{
     margin-top:15px;
     cursor:pointer;
 }
-
 button:hover{
     background:#4a66c2;
 }
-
 .footer{
     margin-top:20px;
     font-size:13px;
     color:#777;
 }
-
 .footer hr{
     margin:15px 0;
     border:0.5px solid #ddd;
-}
-
-.error-box{
-    width:380px;
-    background:white;
-    margin:60px auto;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-    text-align:center;
-}
-
-.error-icon{
-    font-size:60px;
-    margin-bottom:10px;
 }
 
 </style>
@@ -169,26 +135,23 @@ button:hover{
 
 if(isset($_POST['login'])){
 
-$nama = $_POST['nama'];
 $kode = $_POST['kode'];
 
 if($kode == "123"){
-
-echo "<script>alert('Login berhasil');</script>";
-
+    echo "<script>alert('Login berhasil');</script>";
 }else{
-
 ?>
 
 <div class="error-box">
 
-<div class="error-icon">⚠</div>
+<div class="error-icon">
+<img src="error.jpg" alt="error">
+</div>
 
 <h2>UPS!<br>Login Gagal</h2>
-
 <p>Login anda tidak di terima oleh sistem</p>
 
-<form action="">
+<form>
 <button>Login Ulang</button>
 </form>
 
