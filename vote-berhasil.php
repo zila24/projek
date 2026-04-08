@@ -72,7 +72,7 @@
             margin: auto; 
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.05); 
+        box-shadow:0 4px 12px rgba(0,0,0,0.2);
             text-align: center;
         }
         .check-circle {
