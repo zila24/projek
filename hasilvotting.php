@@ -59,7 +59,6 @@ body{
 
 .logout{
     margin-top:200px;
-    
 }
 
 .logout button{
@@ -68,8 +67,6 @@ body{
     background:#2f4f8f;
     color:white;
     border-radius:10px;
-    background:#2F4f8f;
-    color:white;
 }
 
 /* CONTENT */
@@ -117,8 +114,12 @@ body{
     background:#5b8bd9;
     color:white;
     border-radius:5px;
+    display: flex;
+    justify-content: center;
+    align:center;
+    gap: 20px;
+    width: 100%;
 }
-
 .logo-sekolah {
     position: absolute;
     top: 20px;
@@ -167,19 +168,26 @@ body{
 <div class="card">
 <img src="nabila.jpeg">
 <h3>Nabila Zahra</h3>
-<button>Detail</button>
+<button>Kandidat 1</button>
+<button> 0 suara </button>
+<button> 0 orang </button>
 </div>
 
 <div class="card">
 <img src="kaizan.jpeg">
 <h3>Kaizan Erlangga</h3>
-<button>Detail</button>
+<button>Kandidat 2</button>
+<button> 0 suara </button>
+<button> 0 orang </button>
 </div>
 
 <div class="card">
 <img src="ivana.jpeg">
 <h3>Ivana Gwyneth</h3>
-<button>Detail</button>
+<button>Kandidat 3</button>
+<button> 0 suara </button>
+<button> 0 orang </button>
+
 </div>
 
 </div>
