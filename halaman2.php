@@ -6,18 +6,22 @@ $user = "Wiwit";
 <!DOCTYPE html>
 <html>
 <head>
+
+    <div class="logo">
 <title>MyOSIS Vote</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</div>
 
 <style>
 
 body{
     margin:0;
     font-family:Arial;
-    background:#e5e5e5;
+    background:#f3f4f7;
 }
 
 /* BORDER LUAR PUTIH */
-.wrapper{
+.border{
     border:10px solid white;
     min-height:100vh;
 }
@@ -26,7 +30,7 @@ body{
 .sidebar{
     width:200px;
     height:100vh;
-    background:#9fb2cc;
+    background:#B9CDEF;
     float:left;
     text-align:center;
 }
@@ -44,17 +48,18 @@ body{
     padding:12px;
     text-decoration:none;
     color:black;
-    background:#b7c7dd;
+    background:#468CFD;
     margin:5px 0;
 }
 
 .menu a:hover{
-    background:#5b8bd9;
+    background:#315ABF;
     color:white;
 }
 
 .logout{
     margin-top:200px;
+    
 }
 
 .logout button{
@@ -63,6 +68,8 @@ body{
     background:#2f4f8f;
     color:white;
     border-radius:10px;
+    background:#2F4f8f;
+    color:white;
 }
 
 /* CONTENT */
@@ -112,6 +119,12 @@ body{
     border-radius:5px;
 }
 
+.logo-sekolah {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 </style>
 </head>
 
@@ -123,6 +136,11 @@ body{
 <div class="sidebar">
 
 <h3>MyOSIS Vote</h3>
+<img src="logomyosis.png" alt="logo" width="100"; height="100">
+
+<div class="logo-sekolah">
+                <img src="logosmp.png" alt="Logo Sekolah" style="height: 50px;">
+            </div>
 
 <div class="menu">
 <a href="#">Votting</a>
@@ -131,7 +149,7 @@ body{
 
 <div class="logout">
 <p>Hi, <?php echo $user; ?></p>
-<button>Logout</button>
+<button> <i class="fa-solid fa-arrow-left" style="font-size: 9px;"></i>Logout</button>
 </div>
 
 </div>
@@ -147,19 +165,19 @@ body{
 <div class="cards">
 
 <div class="card">
-<img src="c:\Users\VIVOBOOK\OneDrive\Pictures\Saved Pictures\fe3b10ea-718d-4216-bf4a-a35e4bc24747.jpeg">
+<img src="nabila.jpeg">
 <h3>Nabila Zahra</h3>
 <button>Detail</button>
 </div>
 
 <div class="card">
-<img src="c:\Users\VIVOBOOK\OneDrive\Pictures\Saved Pictures\6d513424-f8d7-4c25-92ea-9a92fe7ab086.jpeg">
+<img src="kaizan.jpeg">
 <h3>Kaizan Erlangga</h3>
 <button>Detail</button>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/120x150">
+<img src="ivana.jpeg">
 <h3>Ivana Gwyneth</h3>
 <button>Detail</button>
 </div>
