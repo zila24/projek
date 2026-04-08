@@ -37,7 +37,7 @@
             margin-bottom: 20px;
         }
         .logo-myosis span {
-            font-size: 16px;
+            font-weight: 600;
             font-weight: bold;
             margin-bottom: 5px;
         }
@@ -53,7 +53,7 @@
             
              
             font-weight: bold;
-            font-size: 16px;
+            font-size: 22px;
             color: #000000;
         }
         .logo-sekolah img{
@@ -153,7 +153,7 @@
 <body>
 
     <div class="outer-container">
-        <span>MyOSIS Vote</span>
+        <span style="font-size: 22px; font-weight: bold;">MyOSIS Vote</span>
 
         <div class="header-top">
             <div class="header1">
