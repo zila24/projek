@@ -6,26 +6,19 @@ $user = "Wiwit";
 <html>
 <head>
 <title>MyOSIS Vote</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 
-<div class="logo">
-<title>MyOSIS Vote</title>
-</div>
-
-<style>
+/* PAKSA SEMUA FONT JADI ARIAL */
+*{
+    font-family: Arial, sans-serif !important;
+}
 
 body{
     margin:0;
-    font-family:Arial;
     background:#f3f4f7;
-}
-
-/* BORDER LUAR PUTIH */
-.border{
-    border:10px solid white;
-    min-height:100vh;
 }
 
 /* SIDEBAR */
@@ -52,7 +45,6 @@ body{
     color:black;
     background:#468CFD;
     margin:5px 0;
-
 }
 
 .menu a:hover{
@@ -70,23 +62,15 @@ body{
     background:#2f4f8f;
     color:white;
     border-radius:10px;
-    gap:20px;
-   
-
 }
 
-
-/* content */
+/* CONTENT */
 .content{
-    flex:1;
     text-align:center;
     padding-top:40px;
 }
 
-
-
-
-/* card kandidat */
+/* CARD */
 .card{
     width:400px;
     background:white;
@@ -100,7 +84,6 @@ body{
     box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
-
 .foto-box{
     background:#d12b2b;
     width:150px;
@@ -111,10 +94,6 @@ body{
     align-items:center;
     justify-content:center;
 }
-.judul1{
-    padding-top:0px;
-    padding-bottom:1px;
-}
 
 .foto-box img{
     width:95px;
@@ -122,7 +101,6 @@ body{
     border-radius:50%;
 }
 
-/* nama */
 .nama{
     margin-top:12px;
     font-weight:bold;
@@ -147,7 +125,6 @@ body{
     line-height:1.5;
 }
 
-
 .button-area{
     display:flex;
     justify-content:center;
@@ -166,13 +143,11 @@ body{
     cursor:pointer;
 }
 
-.logo-sekolah {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.logo-sekolah{
+    position:absolute;
+    top:20px;
+    right:20px;
 }
-
-
 
 </style>
 </head>
@@ -181,12 +156,11 @@ body{
 
 <div class="container">
 
-
 <!-- SIDEBAR -->
 <div class="sidebar">
 
 <h3>MyOSIS Vote</h3>
-<img src="logovotting.png" alt="logo" width="100"; height="100">
+<img src="logovotting.png" alt="logo" width="100" height="100">
 
 <div class="logo-sekolah">
     <img src="logo smp.jpeg" alt="Logo Sekolah" style="height: 50px;">
@@ -199,7 +173,7 @@ body{
 
 <div class="logout">
 <p>Hi, <?php echo $user; ?></p>
-<button><i class="fa-solid fa-arrow-left" style="font-size: 9px;"></i>Logout</button>
+<button><i class="fa-solid fa-arrow-left" style="font-size: 9px;"></i> Logout</button>
 </div>
 
 </div>
@@ -207,8 +181,8 @@ body{
 <!-- CONTENT -->
 <div class="content">
 
-<div class= "judul">
-<h1 class="judul1">Profil Calon Ketua OSIS</h1>
+<div class="judul">
+<h1>Profil Calon Ketua OSIS</h1>
 <p>pilih calon ketua osis yang sesuai dengan visi dan misi</p>
 </div>
 
@@ -235,7 +209,7 @@ Mengadakan program untuk mengembangkan minat, bakat, dan prestasi
 
 <div class="button-area">
 <button class="btn">PILIH</button>
-<button class="btn">kembali</button>
+<button class="btn">Kembali</button>
 </div>
 
 </div>
