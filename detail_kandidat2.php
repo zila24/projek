@@ -11,14 +11,20 @@ $user = "Wiwit";
 
 <style>
 
-/* PAKSA SEMUA FONT JADI ARIAL */
+/* FONT GLOBAL */
 *{
-    font-family: Arial, sans-serif !important;
+    font-family: Arial, sans-serif;
 }
 
 body{
     margin:0;
     background:#f3f4f7;
+}
+
+
+.border{
+    border:10px solid white;
+    min-height:100vh;
 }
 
 /* SIDEBAR */
@@ -54,6 +60,8 @@ body{
 
 .logout{
     margin-top:260px;
+    text-decoration: none;
+    color: white;
 }
 
 .logout button{
@@ -62,15 +70,14 @@ body{
     background:#2f4f8f;
     color:white;
     border-radius:10px;
+    
 }
 
-/* CONTENT */
 .content{
     text-align:center;
     padding-top:40px;
 }
 
-/* CARD */
 .card{
     width:400px;
     background:white;
@@ -143,10 +150,10 @@ body{
     cursor:pointer;
 }
 
-.logo-sekolah{
-    position:absolute;
-    top:20px;
-    right:20px;
+.logo-sekolah {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 </style>
@@ -167,13 +174,13 @@ body{
 </div>
 
 <div class="menu">
-<a href="#">Votting</a>
-<a href="#">Hasil Votting</a>
+<a href="kandidat.php">Votting</a>
+<a href="hasilvotting.php">Hasil Votting</a>
 </div>
 
 <div class="logout">
 <p>Hi, <?php echo $user; ?></p>
-<button><i class="fa-solid fa-arrow-left" style="font-size: 9px;"></i> Logout</button>
+<button><i class="fa-solid fa-arrow-left" style="font-size: 9px;"></i> <a href="login.php">Logout</a></button>
 </div>
 
 </div>
@@ -192,7 +199,7 @@ body{
 <img src="kaizen erlangga.jpeg">
 </div>
 
-<div class="nama">Kaizen Erlangga</div>
+<div class="nama">kaizen Erlangga</div>
 <div class="label">calon 2</div>
 
 <div class="text">
@@ -208,8 +215,11 @@ Mengadakan program untuk mengembangkan minat, bakat, dan prestasi
 </div>
 
 <div class="button-area">
+<a href="vote-berhasil.php">
 <button class="btn">PILIH</button>
+<a href="kandidat.php">
 <button class="btn">Kembali</button>
+<a href="kandidat.php">
 </div>
 
 </div>

@@ -21,7 +21,7 @@ body{
     background:#f3f4f7;
 }
 
-/* BORDER LUAR PUTIH */
+
 .border{
     border:10px solid white;
     min-height:100vh;
@@ -60,6 +60,8 @@ body{
 
 .logout{
     margin-top:260px;
+    text-decoration: none;
+    color: white;
 }
 
 .logout button{
@@ -68,6 +70,7 @@ body{
     background:#2f4f8f;
     color:white;
     border-radius:10px;
+    
 }
 
 .content{
@@ -171,13 +174,13 @@ body{
 </div>
 
 <div class="menu">
-<a href="#">Votting</a>
-<a href="#">Hasil Votting</a>
+<a href="kandidat.php">Votting</a>
+<a href="hasilvotting.php">Hasil Votting</a>
 </div>
 
 <div class="logout">
 <p>Hi, <?php echo $user; ?></p>
-<button><i class="fa-solid fa-arrow-left" style="font-size: 9px;"></i> Logout</button>
+<button><i class="fa-solid fa-arrow-left" style="font-size: 9px;"></i> <a href="login.php">Logout</a></button>
 </div>
 
 </div>
@@ -212,8 +215,11 @@ Mengadakan program untuk mengembangkan minat, bakat, dan prestasi
 </div>
 
 <div class="button-area">
+<a href="vote-berhasil.php">
 <button class="btn">PILIH</button>
+<a href="kandidat.php">
 <button class="btn">Kembali</button>
+<a href="kandidat.php">
 </div>
 
 </div>
